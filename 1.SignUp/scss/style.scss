@@ -1,0 +1,149 @@
+@import './mixins';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 70%;
+}
+
+body {
+    background-color: $background;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: $shade;
+}
+
+.container {
+    margin: 0 auto;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem
+}
+
+.slide {
+    @include card('odd');
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    justify-content: space-around;
+}
+
+.logo {
+    filter: invert(28%) sepia(1%) saturate(2131%) hue-rotate(326deg) brightness(128%) contrast(128%)
+}
+
+.heading {
+    font-size: 2rem;
+
+    .type {
+        font-weight: 700;
+    }
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .slider {
+        padding: 0.4rem;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &.selected {
+            background-color: $shade;
+        }
+    }
+}
+
+.btn {
+    background-color: $shade;
+    padding: 2rem;
+    border: 1px solid $shade;
+    border-radius: 5rem;
+    color: $background;
+    font-size: 1.7rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sign-up {
+    @include card('even');
+
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    overflow: hidden;
+
+    .logo {
+        width: 10rem;
+        margin: 5rem;
+        align-self: center;
+    }
+
+    .sign-up-container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 0 3rem 0 3rem;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        border-radius: 3rem;
+
+        .sign-up-heading {
+            font-size: 3.7rem;
+            font-weight: 700;
+        }
+
+        .input-box {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 1.5rem;
+                padding: 1rem 0;
+            }
+
+            input {
+                background-color: $background;
+                color: $shade;
+                border-radius: 2rem;
+                border: 1px solid $background;
+                padding: 1.5rem;
+                margin-left: -1rem;
+                width: 170%;
+            }
+        }
+
+        .btn {
+            align-self: stretch;
+        }
+
+        .existing-account {
+            flex-basis: 3px;
+            font-size: 1rem;
+            align-self: center;
+            background-color: white;
+
+            span {
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,17 @@
+@import './variables';
+
+@mixin card($type) {
+    background-color: $tint;
+    height: 70rem;
+    width: 33rem;
+    border-radius: 5rem;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.2);
+
+    @if $type =='odd' {
+        margin-bottom: 10rem;
+    }
+
+    @else if $type =='even' {
+        margin-top: 10rem;
+    }
+}

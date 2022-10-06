@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 70%;
+}
+
+body {
+  background-color: #F4F5F4;
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #4F4F4F;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.slide {
+  background-color: #FED8C3;
+  height: 70rem;
+  width: 33rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  justify-content: space-around;
+}
+
+.logo {
+  filter: invert(28%) sepia(1%) saturate(2131%) hue-rotate(326deg) brightness(128%) contrast(128%);
+}
+
+.heading {
+  font-size: 2rem;
+}
+.heading .type {
+  font-weight: 700;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+nav .slider {
+  padding: 0.4rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+nav .slider.selected {
+  background-color: #4F4F4F;
+}
+
+.btn {
+  background-color: #4F4F4F;
+  padding: 2rem;
+  border: 1px solid #4F4F4F;
+  border-radius: 5rem;
+  color: #F4F5F4;
+  font-size: 1.7rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sign-up {
+  background-color: #FED8C3;
+  height: 70rem;
+  width: 33rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.2);
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.sign-up .logo {
+  width: 10rem;
+  margin: 5rem;
+  align-self: center;
+}
+.sign-up .sign-up-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 0 3rem 0 3rem;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-radius: 3rem;
+}
+.sign-up .sign-up-container .sign-up-heading {
+  font-size: 3.7rem;
+  font-weight: 700;
+}
+.sign-up .sign-up-container .input-box {
+  display: flex;
+  flex-direction: column;
+}
+.sign-up .sign-up-container .input-box label {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.sign-up .sign-up-container .input-box input {
+  background-color: #F4F5F4;
+  color: #4F4F4F;
+  border-radius: 2rem;
+  border: 1px solid #F4F5F4;
+  padding: 1.5rem;
+  margin-left: -1rem;
+  width: 170%;
+}
+.sign-up .sign-up-container .btn {
+  align-self: stretch;
+}
+.sign-up .sign-up-container .existing-account {
+  flex-basis: 3px;
+  font-size: 1rem;
+  align-self: center;
+  background-color: white;
+}
+.sign-up .sign-up-container .existing-account span {
+  font-weight: 700;
+  cursor: pointer;
+}
