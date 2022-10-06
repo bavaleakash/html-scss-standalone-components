@@ -1,2 +1,3 @@
-# ui-components
-library of html components
+# html-scss-standalone-components
+
+Library of html components
